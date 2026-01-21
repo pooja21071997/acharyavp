@@ -1,0 +1,41 @@
+<header class="navbar">
+  <!-- Left: Logo + Name -->
+  <div class="logo-area">
+    <img src="assets/images/navbar.png" alt="School Logo" class="" />
+    <!-- <div class="school-name">
+      <span class="title">Vivekanand Pratishthan’s</span>
+      <span class="subtitle">Dr Avinash Acharya Vidyalay</span>
+    </div> -->
+  </div>
+
+  <!-- Right: Menu -->
+  <nav class="menu">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">HOME</a>
+    <a routerLink="/about" routerLinkActive="active">ABOUT US</a>
+
+    <!-- SECTION DROPDOWN -->
+    <div class="dropdown">
+      <span class="dropdown-title">SECTION ▾</span>
+      <div class="dropdown-menu">
+        <a routerLink="/section/pre-primary">Pre Primary Section</a>
+        <a routerLink="/section/primary">Primary Section</a>
+      </div>
+    </div>
+
+    <!-- ACADEMICS DROPDOWN -->
+    <div class="dropdown">
+      <span class="dropdown-title">ACADEMICS ▾</span>
+      <div class="dropdown-menu">
+        <a routerLink="/academics/pre-primary">Pre Primary Academics</a>
+        <a routerLink="/academics/primary">Primary Academics</a>
+      </div>
+    </div>
+
+    <a routerLink="/achievements" routerLinkActive="active">ACHIEVEMENTS</a>
+    <a routerLink="/events-news" routerLinkActive="active">EVENTS & NEWS</a>
+    <a routerLink="/contact-us" routerLinkActive="active">CONTACT US</a>
+  </nav>
+</header>
+
+<!-- Bottom Yellow Line -->
+<div class="bottom-line"></div>

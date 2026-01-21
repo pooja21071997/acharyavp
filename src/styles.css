@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #f5a200;
+  margin-bottom: 25px;
+}
+.line{
+	    width: 120px;
+    height: 4px;
+    background-color: #ffc107;
+    margin: 10px ;
+}

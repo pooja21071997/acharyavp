@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './events-news.css',
 })
 export class EventsNews {
+images = Array.from({ length: 45 }, (_, i) => i + 1);
 
 }

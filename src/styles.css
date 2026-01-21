@@ -5,9 +5,17 @@
   background-color: #f5a200;
   margin-bottom: 25px;
 }
-.line{
-	    width: 120px;
-    height: 4px;
-    background-color: #ffc107;
-    margin: 10px ;
+
+/* style applied when the TS adds .active on the link */
+.navbar-nav .nav-link.active {
+  color: #007bff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
 }
+
+/* normal state */
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+.line { width: 80px; height: 4px; background: linear-gradient(90deg,#ffb03b,#ff6a00); margin: .5rem 0 1.2rem 0; border-radius: 2px; }

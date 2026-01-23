@@ -68,7 +68,7 @@
 	background-color: #ffc107;
 	position: absolute;
 	top: 0;
-	left: 15%;
+	
 	transform: translateX(-50%);
 	animation: circlePulse 2000ms ease-in-out infinite;
 	box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);

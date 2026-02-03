@@ -3,7 +3,7 @@
 
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="assets/images/navbar.png" height="50" />
+      <img src="assets/images/navbar.png" height="70" />
     </a>
 
     <!-- Hamburger button -->
@@ -21,11 +21,11 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/"    (click)="closeNavbar()">HOME</a>
+          <a class="nav-link" routerLink="/" [routerLinkActiveOptions]="{ exact: true }"   (click)="closeNavbar()" routerLinkActive="active">HOME</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about"    (click)="closeNavbar()">ABOUT US</a>
+          <a class="nav-link" routerLink="/about"    (click)="closeNavbar()" routerLinkActive="active">ABOUT US</a>
         </li>
 
         <!-- SECTION Dropdown -->
@@ -38,8 +38,8 @@
             SECTION
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/section/pre-primary"   (click)="closeNavbar()">Pre Primary</a></li>
-            <li><a class="dropdown-item" routerLink="/section/primary"   (click)="closeNavbar()">Primary</a></li>
+            <li><a class="dropdown-item" routerLink="/section/pre-primary"   (click)="closeNavbar()" routerLinkActive="active">Pre Primary</a></li>
+            <li><a class="dropdown-item" routerLink="/section/primary"   (click)="closeNavbar()" routerLinkActive="active">Primary</a></li>
           </ul>
         </li>
 
@@ -53,21 +53,21 @@
             ACADEMICS
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="/academics/pre-primary"   (click)="closeNavbar()">Pre Primary</a></li>
-            <li><a class="dropdown-item" routerLink="/academics/primary"   (click)="closeNavbar()">Primary</a></li>
+            <li><a class="dropdown-item" routerLink="/academics/pre-primary"   (click)="closeNavbar()" routerLinkActive="active">Pre Primary</a></li>
+            <li><a class="dropdown-item" routerLink="/academics/primary"   (click)="closeNavbar()" routerLinkActive="active">Primary</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/achievements"   (click)="closeNavbar()">ACHIEVEMENTS</a>
+          <a class="nav-link" routerLink="/achievements"   (click)="closeNavbar()" routerLinkActive="active">ACHIEVEMENTS</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/events-news"   (click)="closeNavbar()">EVENTS & NEWS</a>
+          <a class="nav-link" routerLink="/events-news"   (click)="closeNavbar()" routerLinkActive="active">EVENTS & NEWS</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact-us"   (click)="closeNavbar()">CONTACT US</a>
+          <a class="nav-link" routerLink="/contact-us"   (click)="closeNavbar()" routerLinkActive="active">CONTACT US</a>
         </li>
 
       </ul>

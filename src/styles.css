@@ -99,20 +99,16 @@ img {
     box-shadow 0.25s ease,
     transform 0.25s ease;
 }
-
-/* Hover & keyboard focus */
-img:hover,
-img:focus-visible {
-  border: 2px solid #fd7e14; /* Bootstrap orange */
-  box-shadow: 0 6px 18px rgba(253, 126, 20, 0.35);
-  transform: scale(1.02);
+.line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #d0d0e9, #15025c);
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 2px;
 }
-img {
-  border: 2px solid transparent;
-  box-sizing: border-box;
-}
-img.no-hover:hover {
-  border: none;
-  box-shadow: none;
-  transform: none;
+.line {
+  width: 120px;
+  height: 10px;
+  background-color: #ffc107;
+  margin: 10px;
 }

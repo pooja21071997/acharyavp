@@ -15,7 +15,7 @@ export class PrimaryAcademics {
   
 page = 1;
 totalPages = 0;
-zoom = 0.7;
+zoom = 0.6;
 
 afterLoad(pdf: any) {
   this.totalPages = pdf.numPages;
@@ -31,16 +31,42 @@ fitToPage() {
   } else if (screenWidth < 1200) {
     this.zoom = 0.8;
   } else {
-    this.zoom = 0.7;
+    this.zoom = 0.6;
   }
 }
 
 nextPage() {
-  if (this.page < this.totalPages) this.page++;
+  if (this.page < this.totalPages) {
+    this.page++;
+    this.animatePage();
+  }
 }
 
 prevPage() {
-  if (this.page > 1) this.page--;
+  if (this.page > 1) {
+    this.page--;
+    this.animatePage();
+  }
+}
+
+animatePage() {
+  const viewer = document.querySelector('.pdf-card');
+  viewer?.classList.add('fade');
+  setTimeout(() => {
+    viewer?.classList.remove('fade');
+  }, 400);
+}
+
+zoomIn() {
+  if (this.zoom < 2) {
+    this.zoom += 0.1;
+  }
+}
+
+zoomOut() {
+  if (this.zoom > 0.3) {
+    this.zoom -= 0.1;
+  }
 }
 
 }

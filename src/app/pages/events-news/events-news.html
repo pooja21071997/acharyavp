@@ -1,20 +1,23 @@
-<div class="container">
-  <h3 class="mt-5 text-danger text-center">Achievements 2025 - 26</h3>
-  <div class="line mx-auto"></div>
-   <div class="row g-4">
+<div class="row g-4 mt-5">
+  @for (img of images; track img; let i = $index) {
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <div class="achievement-card">
 
-    
-   <div class="row g-4">
-  @for (img of images; track img) {
-    <div class="col-lg-4 col-md-6 col-sm-6 my-3 ">
-      <img
-        [src]="'assets/images/events/' + img + '.jpg'"
-        class="img-fluid mx-auto d-block "
-        [alt]="'Image ' + img"
-      >
+        <div class="image-wrapper">
+          <img
+            [src]="getImagePath(img)"
+            class="img-fluid"
+            (error)="onImageError($event, img)"
+            [alt]="imageName[i]"
+          >
+        </div>
+
+        <!-- Caption -->
+        <div class="caption text-center p-3">
+          {{ imageName[i] }}
+        </div>
+
+      </div>
     </div>
   }
-</div>
-
-  </div>
 </div>

@@ -4,69 +4,67 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @Component({
   selector: 'app-primary-academics',
-  imports: [PdfViewerModule,CommonModule],
+  imports: [PdfViewerModule, CommonModule],
   templateUrl: './primary-academics.html',
   styleUrl: './primary-academics.css',
 })
 export class PrimaryAcademics {
   pdfSrc = '/assets/files/Dr.Avinash-Aacharya-Vidyalaya-Primary-calendar.pdf';
-//pdfSrc = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
+  //pdfSrc = 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
 
-  
-page = 1;
-totalPages = 0;
-zoom = 0.6;
+  page = 1;
+  totalPages = 0;
+  zoom = 0.6;
 
-afterLoad(pdf: any) {
-  this.totalPages = pdf.numPages;
-  this.fitToPage();
-}
-
-fitToPage() {
-  // Adjust zoom for screen size (trial-tested values)
-  const screenWidth = window.innerWidth;
-
-  if (screenWidth < 768) {
-    this.zoom = 0.6;
-  } else if (screenWidth < 1200) {
-    this.zoom = 0.8;
-  } else {
-    this.zoom = 0.6;
+  afterLoad(pdf: any) {
+    this.totalPages = pdf.numPages;
+    this.fitToPage();
   }
-}
 
-nextPage() {
-  if (this.page < this.totalPages) {
-    this.page++;
-    this.animatePage();
+  fitToPage() {
+    // Adjust zoom for screen size (trial-tested values)
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth < 768) {
+      this.zoom = 0.6;
+    } else if (screenWidth < 1200) {
+      this.zoom = 0.8;
+    } else {
+      this.zoom = 0.6;
+    }
   }
-}
 
-prevPage() {
-  if (this.page > 1) {
-    this.page--;
-    this.animatePage();
+  nextPage() {
+    if (this.page < this.totalPages) {
+      this.page++;
+      this.animatePage();
+    }
   }
-}
 
-animatePage() {
-  const viewer = document.querySelector('.pdf-card');
-  viewer?.classList.add('fade');
-  setTimeout(() => {
-    viewer?.classList.remove('fade');
-  }, 400);
-}
-
-zoomIn() {
-  if (this.zoom < 2) {
-    this.zoom += 0.1;
+  prevPage() {
+    if (this.page > 1) {
+      this.page--;
+      this.animatePage();
+    }
   }
-}
 
-zoomOut() {
-  if (this.zoom > 0.3) {
-    this.zoom -= 0.1;
+  animatePage() {
+    const viewer = document.querySelector('.pdf-card');
+    viewer?.classList.add('fade');
+    setTimeout(() => {
+      viewer?.classList.remove('fade');
+    }, 400);
   }
-}
 
+  zoomIn() {
+    if (this.zoom < 2) {
+      this.zoom += 0.1;
+    }
+  }
+
+  zoomOut() {
+    if (this.zoom > 0.3) {
+      this.zoom -= 0.1;
+    }
+  }
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "acharyaVP": {
+    "acharyavp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "acharyaVP:build:production"
+              "buildTarget": "acharyavp:build:production"
             },
             "development": {
-              "buildTarget": "acharyaVP:build:development"
+              "buildTarget": "acharyavp:build:development"
             }
           },
           "defaultConfiguration": "development"

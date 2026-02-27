@@ -1,6 +1,3 @@
-/* ===================================
-   ELEGANT ABOUT SECTION (LIGHT BLUE)
-=================================== */
 
 .about-elegant-section {
   position: relative;
@@ -14,7 +11,6 @@
   overflow: hidden;
 }
 
-/* Soft floating background shapes */
 .about-elegant-section::before {
   content: "";
   position: absolute;
@@ -42,7 +38,6 @@
   50% { transform: translateY(30px); }
 }
 
-/* Image Styling */
 .about-img-wrapper {
   padding: 12px;
   border-radius: 25px;
@@ -61,7 +56,6 @@
   transform: scale(1.05);
 }
 
-/* Content Box */
 .about-content-box {
   background: #ffffff;
   padding: 45px;
@@ -76,7 +70,6 @@
   box-shadow: 0 30px 70px rgba(8, 85, 100, 0.12);
 }
 
-/* Title */
 .about-title {
   font-size: 34px;
   font-weight: 800;
@@ -88,7 +81,6 @@
   color: #0f172a;
 }
 
-/* Divider */
 .about-divider {
   width: 80px;
   height: 4px;
@@ -103,7 +95,6 @@
   to { width: 80px; }
 }
 
-/* Text */
 .about-content-box p {
   font-size: 16px;
   line-height: 1.8;
@@ -111,7 +102,6 @@
   margin-bottom: 16px;
 }
 
-/* Button */
 .about-elegant-btn {
   margin-top: 15px;
   padding: 12px 30px;
@@ -129,7 +119,6 @@
   box-shadow: 0 18px 40px rgba(8, 85, 100, 0.35);
 }
 
-/* Fade animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -140,11 +129,7 @@
     transform: translateY(0);
   }
 }
-/* ===============================
-   🔥 PREMIUM ANIMATION UPGRADE
-================================ */
 
-/* Section subtle animated gradient shift */
 .about-elegant-section {
   background: linear-gradient(
     120deg,
@@ -163,15 +148,11 @@
   100% { background-position: 0% 50%; }
 }
 
-
-/* ===== IMAGE PREMIUM GLOW EFFECT ===== */
-
 .about-img-wrapper {
   position: relative;
   transition: all 0.6s ease;
 }
 
-/* Animated glow ring */
 .about-img-wrapper::before {
   content: "";
   position: absolute;
@@ -184,7 +165,6 @@
   transition: opacity 0.5s ease;
 }
 
-/* Hover */
 .about-img-wrapper:hover::before {
   opacity: 0.6;
 }
@@ -193,7 +173,6 @@
   transform: translateY(-8px) scale(1.02);
 }
 
-/* Slow floating animation */
 .about-img-wrapper {
   animation: imageFloat 6s ease-in-out infinite;
 }
@@ -204,15 +183,12 @@
 }
 
 
-/* ===== CONTENT CARD GLOW + HOVER ===== */
-
 .about-content-box {
   position: relative;
   transition: all 0.6s ease;
   overflow: hidden;
 }
 
-/* Soft blue glow on hover */
 .about-content-box::after {
   content: "";
   position: absolute;
@@ -234,16 +210,12 @@
     0 0 0 2px #1299b420;
 }
 
-
-/* ===== TITLE GLOW ANIMATION ===== */
-
 .about-title span {
   position: relative;
   color: #0f172a;
   transition: all 0.4s ease;
 }
 
-/* Animated underline glow */
 .about-title span::after {
   content: "";
   position: absolute;
@@ -261,9 +233,6 @@
   transform: scaleX(1);
 }
 
-
-/* ===== PARAGRAPH SMOOTH HOVER ===== */
-
 .about-content-box p {
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -273,15 +242,11 @@
   color: #0f172a;
 }
 
-
-/* ===== BUTTON PREMIUM SHINE EFFECT ===== */
-
 .about-elegant-btn {
   position: relative;
   overflow: hidden;
 }
 
-/* Shiny animation */
 .about-elegant-btn::before {
   content: "";
   position: absolute;
@@ -301,9 +266,6 @@
 .about-elegant-btn:hover {
   transform: translateY(-5px) scale(1.05);
 }
-/* =========================================
-   FOUNDER SPOTLIGHT SECTION
-========================================= */
 
 .founder-spotlight-section {
   position: relative;
@@ -349,7 +311,6 @@
   transition: transform 0.6s ease;
 }
 
-/* Glow effect */
 .founder-image-wrapper::before {
   content: "";
   position: absolute;
@@ -379,9 +340,6 @@
   50% { transform: translateY(-12px); }
 }
 
-
-/* ================= QUOTE BOX ================= */
-
 .founder-quote-box {
   position: relative;
   background: #ffffff;
@@ -393,7 +351,6 @@
   overflow: hidden;
 }
 
-/* Soft blue glow on hover */
 .founder-quote-box::after {
   content: "";
   position: absolute;
@@ -415,9 +372,6 @@
     0 0 0 2px #1299b420;
 }
 
-
-/* ================= QUOTE ICON ================= */
-
 .quote-icon {
   font-size: 40px;
   color: #085564;
@@ -429,9 +383,6 @@
   0%,100% { opacity: 0.6; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.1); }
 }
-
-
-/* ================= TEXT ================= */
 
 .founder-quote-text {
   font-size: 24px;
@@ -446,8 +397,6 @@
   transform: translateX(5px);
 }
 
-
-/* Divider */
 .founder-divider {
   width: 70px;
   height: 3px;
@@ -461,8 +410,6 @@
   width: 110px;
 }
 
-
-/* Name */
 .founder-name {
   font-weight: 700;
   color: #085564;
@@ -474,8 +421,6 @@
   transform: translateY(-3px);
 }
 
-
-/* Fade animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -486,9 +431,6 @@
     transform: translateY(0);
   }
 }
-/* ===================================
-   DARK BLUE SUBSECTION DESIGN
-=================================== */
 
 .subsection-dark {
   background: linear-gradient(135deg, #0f172a, #0b2447, #0f172a);
@@ -497,14 +439,12 @@
   padding: 90px 0;
 }
 
-/* Background subtle animation */
 @keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Title */
 .sub-dark-title {
   font-size: 36px;
   font-weight: 800;
@@ -520,7 +460,6 @@
   animation: lineGrow 1.2s ease forwards;
 }
 
-/* Card */
 .sub-dark-card {
   background: linear-gradient(145deg, #ffffff, #f8f9ff);
   padding: 55px 35px;
@@ -533,7 +472,6 @@
     0 0 0 1px rgba(255,255,255,0.05);
 }
 
-/* Hover effect */
 .sub-dark-card:hover {
   transform: translateY(-14px) scale(1.03);
   box-shadow:
@@ -541,7 +479,6 @@
     0 0 0 2px #f744a055;
 }
 
-/* Light animated glow inside card */
 .sub-dark-card::before {
   content: "";
   position: absolute;
@@ -557,7 +494,6 @@
   transform: scale(1.2);
 }
 
-/* Icon circle */
 .icon-circle {
   width: 80px;
   height: 80px;
@@ -573,7 +509,6 @@
   transition: all 0.5s ease;
 }
 
-/* Icon animation */
 .sub-dark-card:hover .icon-circle {
   transform: rotate(10deg) scale(1.15);
   box-shadow:
@@ -581,7 +516,6 @@
     0 20px 45px #f744a080;
 }
 
-/* Text */
 .sub-dark-card h4 {
   font-weight: 700;
   margin-bottom: 15px;
@@ -599,14 +533,10 @@
   transform: translateY(-3px);
 }
 
-/* Divider animation */
 @keyframes lineGrow {
   from { width: 0; }
   to { width: 80px; }
 }
-/* ===================================
-   PRINCIPAL SECTION - LIGHT PREMIUM
-=================================== */
 
 .principal-section {
   background: linear-gradient(135deg, #f8fbff, #eef6ff);
@@ -615,7 +545,6 @@
   overflow: hidden;
 }
 
-/* Subtle floating light effect */
 .principal-section::before {
   content: "";
   position: absolute;
@@ -633,7 +562,6 @@
   100% { transform: translateY(0); }
 }
 
-/* Title */
 .principal-title {
   font-size: 36px;
   font-weight: 800;
@@ -649,7 +577,6 @@
   animation: lineGrow 1.2s ease forwards;
 }
 
-/* Card */
 .principal-card {
   background: #ffffff;
   padding: 60px 50px;
@@ -662,7 +589,6 @@
   transition: all 0.6s ease;
 }
 
-/* Hover effect */
 .principal-card:hover {
   transform: translateY(-10px);
   box-shadow:
@@ -670,7 +596,6 @@
     0 10px 30px rgba(15, 23, 42, 0.12);
 }
 
-/* Quote icon */
 .quote-icon {
   font-size: 45px;
   color: #1299b4;
@@ -682,7 +607,6 @@
   transform: scale(1.2) rotate(-8deg);
 }
 
-/* Text */
 .principal-card p {
   font-size: 16px;
   line-height: 1.9;
@@ -691,24 +615,20 @@
   text-align: justify;
 }
 
-/* Divider animation */
 @keyframes lineGrow {
   from { width: 0; }
   to { width: 90px; }
 }
-/* Remove horizontal scroll */
 .table-responsive {
   overflow-x: hidden !important;
 }
 
-/* Fix table layout */
 .interactive-table {
   width: 100%;
-  border-collapse: collapse;   /* important */
-  table-layout: fixed;         /* keeps header aligned */
+  border-collapse: collapse; 
+  table-layout: fixed;         
 }
 
-/* HEADER */
 .interactive-table thead th {
   background: linear-gradient(135deg, #0f766e, #0e7490);
   color: #fff;
@@ -718,7 +638,6 @@
   border: none;
 }
 
-/* Proper rounded header */
 .interactive-table thead th:first-child {
   border-top-left-radius: 12px;
 }
@@ -727,25 +646,21 @@
   border-top-right-radius: 12px;
 }
 
-/* BODY ROW */
 .interactive-table tbody tr {
   border-bottom: 1px solid #e2e8f0;
   transition: all 0.3s ease;
 }
 
-/* Remove row gap that caused scroll */
 .interactive-table tbody td {
   padding: 16px 18px;
   color: #334155;
   font-weight: 500;
 }
 
-/* Hover effect */
 .interactive-table tbody tr:hover {
   background: linear-gradient(90deg, #e0f7ff, #f0fbff);
 }
 
-/* Make second column right aligned for better design */
 .interactive-table td:last-child,
 .interactive-table th:last-child {
   text-align: right;

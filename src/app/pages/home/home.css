@@ -1,4 +1,3 @@
-/* Smooth transition for cards */
 .feature-card {
     border: 1px solid #0d6efd !important;  
   transition: all 0.4s ease;
@@ -6,36 +5,26 @@
  
 }
 
-/* Hover effect */
 .feature-card:hover {
      background: linear-gradient(135deg, #ffffff, #f0f6ff);
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.35); /* Bootstrap blue */
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.35); 
 }
 
-/* Icon transition */
 .feature-card i {
   transition: transform 0.4s ease, color 0.4s ease;
 }
 
-/* Icon hover animation */
 .feature-card:hover i {
   transform: scale(1.15);
-  color: #0d6efd; /* Bootstrap primary blue */
+  color: #0d6efd; 
 }
 
-/* Text color change */
 .feature-card:hover p {
   color: #333;
   transition: color 0.4s ease;
 }
 
-
-/* -------------------------------------- */
-/* About and dhey vidhan */
-/* -------------------------------------- */
-/* SECTION BACKGROUND */
-/* Main section */
 .vision-hero {
   position: relative;
   padding: 90px 20px;
@@ -43,7 +32,6 @@
   overflow: hidden;
 }
 
-/* Ambient background glow */
 .vision-glow {
   position: absolute;
   width: 500px;
@@ -55,7 +43,6 @@
   z-index: 0;
 }
 
-/* Icon wrapper */
 .vision-icon-wrapper {
   position: relative;
   width: 120px;
@@ -64,7 +51,6 @@
   z-index: 1;
 }
 
-/* Orbit ring */
 .vision-orbit {
   position: absolute;
   inset: 0;
@@ -73,7 +59,6 @@
   animation: orbitRotate 12s linear infinite;
 }
 
-/* Rocket icon */
 .vision-icon {
   position: absolute;
   inset: 0;
@@ -88,7 +73,6 @@
   animation: rocketFloat 3.5s ease-in-out infinite;
 }
 
-/* Title */
 .vision-title {
   font-size: 38px;
   font-weight: 800;
@@ -96,7 +80,6 @@
   animation: fadeUp 1.1s ease forwards;
 }
 
-/* Divider */
 .vision-line {
   width: 80px;
   height: 4px;
@@ -106,7 +89,6 @@
   animation: lineGrow 1.2s ease forwards;
 }
 
-/* Main text */
 .vision-text {
   font-size: 18px;
   color: #5d4037;
@@ -116,7 +98,6 @@
   animation: fadeUp 1.4s ease forwards;
 }
 
-/* Footer */
 .vision-footer {
   margin-top: 30px;
   font-size: 22px;
@@ -126,7 +107,6 @@
   animation: glowText 2.5s ease-in-out infinite;
 }
 
-/* Animations */
 @keyframes orbitRotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -162,7 +142,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .vision-title {
     font-size: 30px;
@@ -171,10 +150,6 @@
     font-size: 16px;
   }
 }
-/* ======================
-   ABOUT SECTION STYLING
-   ====================== */
-
 
 .hero-section {
   position: relative;
@@ -183,12 +158,10 @@
   overflow: hidden;
 }
 
-/* Alternate hero background */
 .hero-alt {
   background: linear-gradient(135deg, #fff5f5, #fff);
 }
 
-/* Badge */
 .hero-badge {
   display: inline-block;
   padding: 6px 14px;
@@ -200,7 +173,6 @@
   margin-bottom: 15px;
 }
 
-/* Title */
 .hero-title {
   font-size: 42px;
   font-weight: 800;
@@ -212,7 +184,6 @@
   color: #0d6efd;
 }
 
-/* Text */
 .hero-text {
   font-size: 16px;
   color: #555;
@@ -220,7 +191,6 @@
   margin-bottom: 25px;
 }
 
-/* Button */
 .hero-btn {
   padding: 12px 28px;
   font-weight: 600;
@@ -237,7 +207,6 @@
   box-shadow: 0 18px 40px rgba(13, 110, 253, 0.6);
 }
 
-/* Image wrapper */
 .hero-image-wrapper {
   position: relative;
   animation: floatUp 1.2s ease forwards;
@@ -267,7 +236,6 @@
   transform: scale(1.05);
 }
 
-/* Animations */
 @keyframes floatUp {
   from {
     opacity: 0;
@@ -278,13 +246,6 @@
     transform: translateY(0);
   }
 }
-/* -------------------------------------- */
-/* our inspiration */
-/* -------------------------------------- */
-/* =================================== */
-/* OUR INSPIRATION  */
-/* =================================== */
-/* Section background */
 
 .inspiration-hero {
   position: relative;
@@ -293,7 +254,6 @@
   overflow: hidden;
 }
 
-/* Soft glowing background */
 .inspiration-hero::before {
   content: "";
   position: absolute;
@@ -314,7 +274,6 @@
   right: -100px;
 }
 
-/* Tag */
 .inspiration-tag {
   display: inline-block;
   padding: 6px 16px;
@@ -327,7 +286,6 @@
   animation: fadeDown 1s ease forwards;
 }
 
-/* Title */
 .inspiration-title {
   font-size: 44px;
   font-weight: 800;
@@ -340,7 +298,6 @@
   color: #ff416c;
 }
 
-/* Text */
 .inspiration-text {
   font-size: 16.5px;
   color: #555;
@@ -349,7 +306,6 @@
   animation: fadeLeft 1.4s ease forwards;
 }
 
-/* Button */
 .inspiration-btn {
   padding: 12px 30px;
   font-weight: 600;
@@ -366,7 +322,6 @@
   box-shadow: 0 22px 50px rgba(255,65,108,0.65);
 }
 
-/* Image */
 .inspiration-image-wrapper {
   position: relative;
   padding: 14px;
@@ -388,7 +343,6 @@
   transform: scale(1.06);
 }
 
-/* Animations */
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -422,10 +376,6 @@
   }
 }
 
-/* -------------------------------------- */
-/* Subsections */
-/* --------------------------------------- */
-/* ===== Background ===== */
 .subsection-wrapper {
   background: linear-gradient(135deg, #0f172a, #085564, #0f172a);
   background-size: 300% 300%;
@@ -441,14 +391,13 @@
   100% { background-position: 0% 50%; }
 }
 
-/* ===== Section Title ===== */
+
 .section-title {
   font-weight: 800;
   font-size: 2.5rem;
   background: linear-gradient(90deg, #0f172a, #085564);
   -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  /* animation: fadeDown 1s ease; */
+ 
 }
 
 .section-line {
@@ -465,7 +414,6 @@
   to { width: 80px; }
 }
 
-/* ===== Cards ===== */
 .sub-card {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
@@ -479,7 +427,6 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* Glow border animation */
 .sub-card::before {
   content: "";
   position: absolute;
@@ -499,13 +446,11 @@
   filter: blur(10px);
 }
 
-/* Hover effect */
 .sub-card:hover {
   transform: translateY(-15px) scale(1.03);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* ===== Icon ===== */
 .icon-box {
   width: 80px;
   height: 80px;
@@ -531,7 +476,6 @@
   transform: rotate(360deg) scale(1.2);
 }
 
-/* ===== Text ===== */
 .sub-card h4 {
   font-weight: 700;
   margin-bottom: 15px;
@@ -542,7 +486,6 @@
   opacity: 0.85;
 }
 
-/* ===== Entrance Animation ===== */
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -560,27 +503,20 @@
   margin: 0.5rem 0 1.2rem 0;
   border-radius: 2px;
 }
-/* ===============================
-   SECTION BACKGROUND ANIMATION
-=================================*/
+
 .objective-section {
  background: linear-gradient(135deg, #fff5f5, #ffffff);
   background-size: 400% 400%;
-  /* animation: gradientFlow 10s ease infinite; */
   position: relative;
   overflow: hidden;
 }
 
-/* Animated Gradient */
 @keyframes gradientFlow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ===============================
-   HEADING
-=================================*/
 .objective-title {
   font-weight: 800;
   font-size: 2.8rem;
@@ -598,9 +534,6 @@
   to { width: 100px; }
 }
 
-/* ===============================
-   IMAGE CARD (Glass Effect)
-=================================*/
 .objective-card {
   position: relative;
   padding: 30px;
@@ -612,7 +545,6 @@
   animation: fadeUp 1.2s ease;
 }
 
-/* Glow border effect */
 .objective-card::before {
   content: "";
   position: absolute;
@@ -629,36 +561,27 @@
   filter: blur(15px);
 }
 
-/* Hover lift */
 .objective-card:hover {
   transform: translateY(-15px) scale(1.02);
   box-shadow: 0 30px 60px rgba(248, 244, 244, 0.4);
 }
 
-/* ===============================
-   IMAGE EFFECT
-=================================*/
 .objective-img {
   border-radius: 20px;
   transition: all 0.6s ease;
   animation: floatImage 4s ease-in-out infinite;
 }
 
-/* Floating effect */
 @keyframes floatImage {
   0%,100% { transform: translateY(0px); }
   50% { transform: translateY(-12px); }
 }
 
-/* Image hover glow */
 .objective-card:hover .objective-img {
   transform: scale(1.05);
   box-shadow: 0 0 40px #fffbfb;
 }
 
-/* ===============================
-   ENTRANCE ANIMATIONS
-=================================*/
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -680,13 +603,12 @@
     transform: translateY(0);
   }
 }
-/* Section Background */
+
 .features-section {
   background: linear-gradient(135deg, #ffffff, #f8f9fa);
   position: relative;
 }
 
-/* Section Title */
 .section-title {
   font-size: 2.2rem;
   color: #e94699;
@@ -694,7 +616,6 @@
   position: relative;
 }
 
-/* Feature Card */
 .feature-card {
   border: none;
   border-radius: 20px;
@@ -706,19 +627,16 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Floating animation like value-card */
 .feature-card {
   animation: fadeUp 0.8s ease forwards;
   opacity: 0;
 }
 
-/* Hover Effect */
 .feature-card:hover {
   transform: translateY(-12px) scale(1.03);
   box-shadow: 0 20px 50px rgba(233, 70, 153, 0.3);
 }
 
-/* Icon Circle */
 .feature-circle {
   width: 80px;
   height: 80px;
@@ -734,14 +652,12 @@
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.4);
 }
 
-/* Circle animation on hover */
 .feature-card:hover .feature-circle {
   transform: rotate(360deg) scale(1.1);
   background: linear-gradient(135deg, #e94699, #f744a0);
   box-shadow: 0 10px 30px rgba(247, 68, 160, 0.5);
 }
 
-/* Text */
 .feature-card p {
   color: #fff;
   font-weight: 500;
@@ -752,7 +668,7 @@
   color: #fff;
 }
 
-/* Fade Up Animation */
+
 @keyframes fadeUp {
   from {
     transform: translateY(40px);
@@ -763,9 +679,7 @@
     opacity: 1;
   }
 }
-/* ===============================
-   SECTION BACKGROUND
-=================================*/
+
 .features-section {
   background: linear-gradient(
     135deg,
@@ -785,9 +699,6 @@
   100% { background-position: 0% 50%; }
 }
 
-/* ===============================
-   TITLE
-=================================*/
 .features-title {
   font-size: 2.7rem;
   font-weight: 900;
@@ -801,9 +712,6 @@
   to { width: 90px; }
 }
 
-/* ===============================
-   CARD STYLE
-=================================*/
 .feature-card {
   padding: 40px 25px;
   border-radius: 20px;
@@ -818,7 +726,6 @@
   opacity: 0;
 }
 
-/* Glow Border Effect */
 .feature-card::before {
   content: "";
   position: absolute;
@@ -836,16 +743,12 @@
   filter: blur(15px);
 }
 
-/* Hover Lift */
 .feature-card:hover {
   transform: translateY(-15px) scale(1.05);
   box-shadow: 0 20px 50px rgba(245, 208, 227, 0.4);
   color: #fff;
 }
 
-/* ===============================
-   ICON CIRCLE
-=================================*/
 .icon-circle {
   width: 80px;
   height: 80px;
@@ -866,24 +769,17 @@
   background: linear-gradient(135deg, #f744a0, #e94699);
 }
 
-/* Floating animation */
 @keyframes floatIcon {
   0%,100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
 
-/* ===============================
-   TEXT
-=================================*/
 .feature-card p {
   font-size: 15px;
   opacity: 0.9;
   margin: 0;
 }
 
-/* ===============================
-   ENTRANCE ANIMATIONS
-=================================*/
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -893,7 +789,6 @@
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); opacity: 1; }
 }
-/* ================= HERO CAROUSEL ================= */
 
 .hero-carousel {
   position: relative;
@@ -913,12 +808,11 @@
   transition: transform 6s ease-in-out;
 }
 
-/* Zoom Animation on Active Slide */
 .carousel-item.active .hero-img {
   transform: scale(1.1);
 }
 
-/* Dark Overlay */
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -929,7 +823,6 @@
   z-index: 1;
 }
 
-/* Text Content */
 .hero-content {
   position: absolute;
   top: 50%;
@@ -945,7 +838,6 @@
   opacity: 1;
 }
 
-/* Text Animation */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -967,7 +859,6 @@
   margin-top: 10px;
 }
 
-/* Smooth Fade Transition */
 .carousel-fade .carousel-item {
   transition: opacity 1.2s ease-in-out;
 }
